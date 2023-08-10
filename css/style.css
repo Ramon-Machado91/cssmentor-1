@@ -126,7 +126,7 @@ footer {
   align-items: center;
 }
 
-@media(max-width:375px){
+@media(max-width:750px){
     body{
         background-image: url(../images/bg-mobile.svg);
         background-size: cover;
