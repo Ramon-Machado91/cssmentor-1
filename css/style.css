@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  color: #ffff;
+}
+
+:root {
+  --primary-color: hsl(257, 40%, 49%);
+  --secundary-color: hsl(300, 69%, 71%);
+}
+
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-color: var(--primary-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  min-height: 100px;
+}
+
+header img {
+  margin-left: 55px;
+  margin-top: 45px;
+  width: 230px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  margin-left: 70px;
+  margin-top: 90px;
+  
+}
+
+.text-container {
+  margin-left: 60px;
+}
+
+.text-container h1 {
+  font-size: 38px;
+  font-weight: 600;
+  transform: translateY(-60px);
+}
+
+.text-container p {
+  font-size: 18px;
+  font-weight: 400;
+  transform: translateY(-40px);
+}
+.text-container button {
+  background-color: #ffff;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 40px;
+  text-align: center;
+  color: var(--primary-color);
+  border: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 3px 16px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 16px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 16px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.text-container button:hover {
+  background-color: var(--secundary-color);
+  color: #ffff;
+}
+
+footer {
+  min-height: 100px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 40px;
+}
+
+
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  border: solid #fff 1px;
+  border-radius: 50px;
+  margin: 0 10px;
+  border: solid #fff 1px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.social-media a:hover{
+    color: var(--secundary-color);
+    border:solid var(--secundary-color) 1px;
+    border-radius: 50px;
+    
+}
+
+.social-media i {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width:375px){
+    body{
+        background-image: url(../images/bg-mobile.svg);
+        background-size: cover;
+        
+        
+    }
+
+    header img{
+    width: 100px;
+    margin-left: 20px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .img-container{
+        margin: 0 30px;
+    }
+
+    .text-container{
+        margin: 20px 20px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .text-container h1{
+        font-size: 25px;
+    }
+
+    .text-container p{
+        font-size: 14px;
+    }
+
+    .text-container button{
+        height: 40px;
+    }
+
+    .social-media{
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .social-media i{
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
